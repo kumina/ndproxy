@@ -17,8 +17,10 @@ do
 	ip -6 neigh show dev "$1"
 	shift
 done | grep -v ^fe80: | cut -d ' ' -f 1
-) | sort -u | tee "$DB" |
+) | sort -u > "$DB.tmp"
+mv "$DB.tmp" "$DB"
+
 while read address
 do
 	ip -6 neigh add proxy "$address" dev "$OF"
-done
+done < "$DB"

@@ -1,3 +1,9 @@
+ndproxy (1.0-1KUMIRELEASE2) unstable; urgency=low
+
+  * Use temporary file. tee(1) doesn't do what I want.
+
+ -- Ed Schouten <ed@kumina.nl>  Thu, 9 Jun 2011 10:47:13 +0200
+
 ndproxy (1.0-1KUMIRELEASE1) unstable; urgency=low
 
   * Initial release.
