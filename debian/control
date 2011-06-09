@@ -1,0 +1,11 @@
+Source: ndproxy
+Section: misc
+Priority: optional
+Maintainer: Ed Schouten <ed@kumina.nl>
+Build-Depends: debhelper (>= 5), build-essential
+
+Package: ndproxy
+Architecture: any
+Description: Proxy Neighbor Discovery entries between interfaces
+ The ndproxy utility obtains all Neighbor Discovery entries from a set
+ of interfaces and propagates it to another interface.
