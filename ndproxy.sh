@@ -16,7 +16,7 @@ while test $# -gt 0
 do
 	ip -6 neigh show dev "$1"
 	shift
-done | grep -v ^fe80: | cut -d ' ' -f 1
+done | awk '/^[^f][^e][^8][^0].*REACHABLE$/ { print $1 }'
 ) | sort -u > "$DB.tmp"
 mv "$DB.tmp" "$DB"
 
