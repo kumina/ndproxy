@@ -26,8 +26,8 @@ do
 done | awk '/^[^f][^e][^8][^0].*REACHABLE$/ { print $1 }'
 )
 
-# Remove entries older than one month.
-find . -type f -mtime +31 -delete
+# Remove entries older than three months.
+find . -type f -mtime +90 -delete
 
 # Add routes
 for i in *
