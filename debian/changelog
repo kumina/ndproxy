@@ -1,3 +1,9 @@
+ndproxy (1.0-1KUMIRELEASE3) unstable; urgency=low
+
+  * Use directory-based structure.
+
+ -- Ed Schouten <ed@kumina.nl>  Fri, 10 Jun 2011 12:17:22 +0200
+
 ndproxy (1.0-1KUMIRELEASE2) unstable; urgency=low
 
   * Use temporary file. tee(1) doesn't do what I want.
