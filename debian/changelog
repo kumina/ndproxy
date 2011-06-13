@@ -1,4 +1,4 @@
-ndproxy (1.0-1KUMIRELEASE3) unstable; urgency=low
+ndproxy (1.0-1KUMIRELEASE4) unstable; urgency=low
 
   * Also add records for own internal IPv6 addresses.
 
