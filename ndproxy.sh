@@ -22,8 +22,13 @@ touch /dev/null $(
 while test $# -gt 0
 do
 	ip -6 neigh show dev "$1"
+	ip -6 addr show dev "$1"
 	shift
-done | awk '/^[^f][^e][^8][^0].*REACHABLE$/ { print $1 }'
+done | awk '
+BEGIN { FS="[ /]*" }
+/^[^f][^e][^8][^0].*REACHABLE$/ { print $1 }
+/inet6 .* scope global/ { print $3 }
+'
 )
 
 # Remove entries older than three months.

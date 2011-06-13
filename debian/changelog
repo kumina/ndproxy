@@ -1,5 +1,11 @@
 ndproxy (1.0-1KUMIRELEASE3) unstable; urgency=low
 
+  * Also add records for own internal IPv6 addresses.
+
+ -- Ed Schouten <ed@kumina.nl>  Mon, 13 Jun 2011 13:48:33 +0200
+
+ndproxy (1.0-1KUMIRELEASE3) unstable; urgency=low
+
   * Use directory-based structure.
 
  -- Ed Schouten <ed@kumina.nl>  Fri, 10 Jun 2011 12:17:22 +0200
